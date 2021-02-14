@@ -1,4 +1,4 @@
-**JULIA SHAITANOVA**
+**Julia Shaitanova**
 
 __*Address:*__ 3 Gerasimenko, Minsk, 220047, Belarus
 
