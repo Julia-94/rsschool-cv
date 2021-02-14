@@ -16,7 +16,8 @@ __*Objective:*__
 
 __*Skills:*__
 Confident PC user (AutoCAD; SolidWorks; 
-AltiumDesigner; Photoshop; MSOffice: Word, Excel; Internet).
+AltiumDesigner; Photoshop; MSOffice: Word, Excel; Internиet).\
+Programming language: Delphi, Assembly.\
     Highly organized and detail-oriented. Ability to work as part of the team.
 
 __*Education:*__
