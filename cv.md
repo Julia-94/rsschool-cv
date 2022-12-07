@@ -1,3 +1,5 @@
+![my photo](/my%20photo.png)
+
 **Julia Shaitanova**
 
 **_Address:_** 3 Gerasimenko, Minsk, 220047, Belarus
@@ -50,4 +52,3 @@ Form of study: full-time (budget).
 
 - English level: Pre-Intermediate.
 - Marital status: married.
-  https://Julia-94.github.io/rsschool-cv/
