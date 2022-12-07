@@ -14,7 +14,7 @@
 
 **_Objective:_**
 
-I want to realize myself in the field of IT.
+I want to realize myself in the field of IT. Work as a front-end developer on interesting projects. Chat with developers around the world. Learn new things and share experiences.
 
 **_Skills:_**
 
