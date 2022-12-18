@@ -14,17 +14,16 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 body {
-    box-sizing: border-box;
-    width: 900px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
-    border: 0px solid;
-    margin: auto;
-    position: absolute;
-    top: 20px; left: 0; bottom: 20px; right: 0; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
 
 .body_section {
     box-shadow: 0 0 15px #666;
+    margin: 20px auto 20px;  /* + */
+    max-width: 900px; /* + */
+    box-sizing: border-box;
+    box-shadow: 0 0 15px #666;
+    overflow: hidden; /* + чтоб не ездила страница в разные стороны*/
 }
 
 .header {
@@ -93,11 +92,33 @@ body {
     color: black; 
 }
 
+.page-wrapper{ /* добавила новый блок с этим классом*/
+    /* display: flex; */
+    position: relative; /* чтоб закрепить aside на верху страницы а не к хэдеру*/
+}
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    left: 300px;
+    padding: 20px;
+    padding-left: 295px;
+    font-size: 18px;
+    padding-top: 30px;
+    line-height: 26px;
+    list-style: inside;
+    text-align: justify;
+    background-color:rgb(234, 234, 234);
+}
+
 .main section {
-    background-color:#EAECEE;
     color: #000;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
+}
+
+.block-right-main p {
+    padding-bottom: 20px;
 }
 
 .main a {
@@ -105,7 +126,7 @@ body {
     color: #000;
 }
 
-.main h2 {
+.body_h2 {
     box-sizing: border-box;
     font-size: 22px;
     text-transform: uppercase;
@@ -121,11 +142,17 @@ body {
     box-sizing: border-box;
     width: 275px;
     background-color: rgba(184,186,186, 0.7);
-    position:absolute;
+    position: absolute;
     top: 0px;
-    bottom: 0px;
+    left: 0;  /* + */
+    height: 100%; /* + */
     padding: 30px 20px;
     line-height: 26px;
+}
+
+.block-left-main a {
+    text-decoration: none;
+    color: #000;
 }
 
 .block-left-main img {
@@ -136,93 +163,71 @@ body {
     list-style: none;
 }
 
-.block-right-main p {
-    margin-top: 20px;  
-}
-
 .block-left-main ul {
     list-style: none;
-}
-
-.block-right-main {
-    
-    box-sizing: border-box;
-    width: 580px;
-    position:relative;
-    left: 300px;
-    padding: 20px;
-    font-size: 18px;
-    padding-top: 30px;
-    line-height: 26px;
-    list-style:inside;
-    text-align: justify;
-
 }
 
 .code {
     border: 2px solid #ffffff;
     background-color: #ffffff;
     width: 540px;
-    padding: 20px;
+    padding: 20px; 
     margin-top: 20px;
 }
 
 .footer {
     box-sizing: border-box;
-    height: 80px;
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
     background:#AAB7B8; /* Grey background */
     box-shadow: 0 0 15px #666;
-    
 }
 
 .footer p {
-    float:left; /* Make sure that the links stay side-by-side */
-    display: block;
     color: #ffffff;
     font-size: 16px;
     text-shadow: 0px 1px 0px #AAB7B8;
-    font-family: 'Bebas Neue', sans-serif;
-    padding: 20px;      
+    font-family: 'Bebas Neue', sans-serif; 
 }
 
 .footer a {
-    float:left; /* Make sure that the links stay side-by-side */
-    display: block;
-    margin: 10px;
-    color: white;
     text-decoration: none;
     font-family: 'Bebas Neue', sans-serif;
     color: #ffffff; 
 }
 
 .footer-left {
-    position:relative;
-    bottom: 10px;
-    left: 30px;   
+    width: 30%;
+    display: inline-block;
+    text-align: center;
 }
 
-.footer-left img {
-    position:relative;
-    top: 10px;
-    margin-right: 10px;
+.footer-left span {
+   position: relative;
+   bottom: 10px;
+    
 }
 
 .footer-center {
-    position:relative;
-    left: 210px;
-    bottom: 20px;
-    margin: 20px;
+    width: 30%;
+    display: inline-block;
+    margin-left: 4.4%;
+    margin-right: 4.4%;
 }
 
-.footer-center img {
-    position:relative;
-    margin-right: 5px;
+.footer-center-body {
+    text-align: center;
+    position: relative;
+    bottom: 9px;
+}
+.footer-center p {
+    display: inline-block;
 }
 
 .footer-right {
-    position:relative;
-    bottom: 20px;
-    left: 450px;
-    margin: 20px; 
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    padding-left: 50px;
 }
