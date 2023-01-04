@@ -17,6 +17,10 @@ ol,ul {
     list-style: none;
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
 body {
     width: 1440px;
     margin: auto;
@@ -65,6 +69,10 @@ body {
     line-height: 50px;
     color: #010201;
     text-decoration: none;
+}
+
+.nav_conteiner a:hover{
+    color: #499A18;
 }
 
 .nav_conteiner a {
@@ -151,6 +159,7 @@ h1 span {
     width: 158px;
     height: 44px;
     border: 2px solid #E06733;
+    background-color: none;
     border-radius: 10px;
     font-weight: 400;
     font-size: 16px;
@@ -158,6 +167,11 @@ h1 span {
     text-align: center;
     color: #000000;
     cursor: pointer;
+}
+
+.welcome__button:hover {
+    background-color: #E06733;
+    color: #FFFFFF;
 }
 
 /*секция about*/
@@ -247,6 +261,12 @@ h1 span {
     color: #E06733;
     margin-right: 38px;
     cursor: pointer;
+    background-color: none;
+}
+
+.service__button:hover {
+    background-color: #E06733;
+    color: #FFFFFF;
 }
 
 .service_container_2 {
@@ -358,6 +378,11 @@ h1 span {
     cursor: pointer;
 }
 
+.prices__button_push:hover {
+    background: rgba(73, 154, 24,0.5);
+    transform:scale(1.25);
+}
+
 .prices h2 {
     font-weight: 700;
     font-size: 40px;
@@ -408,6 +433,12 @@ h1 span {
     text-align: center;
     color: #E06733;
     cursor: pointer;
+    background-color: none;
+}
+
+.prices__button_2:hover {
+    background-color: #E06733;
+    color: #FFFFFF;
 }
 
 /*секция contacts*/
@@ -467,6 +498,11 @@ h1 span {
     cursor: pointer;
 }
 
+.contacts__button_push:hover {
+    background: rgba(73,154,24,0.5);
+    transform:scale(1.25);
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -489,9 +525,9 @@ footer a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 169px;
-    height: 50px;
     margin-left: 109px;
+    width: 169px;
+    gap: 20px;
 }
 
 .footer_container_2 {
@@ -500,6 +536,10 @@ footer a {
     align-items: center;
     margin-right: 20px;
     cursor: pointer;
+}
+
+footer a:hover{
+    color: #499A18;
 }
 
 .footer_container_3 {
@@ -515,6 +555,10 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex: 0 0 182px;   
+    flex: 0 0 182px;  
+}
+
+.footer_container_3 img:hover {
+    transform:scale(1.25);
 }
 
